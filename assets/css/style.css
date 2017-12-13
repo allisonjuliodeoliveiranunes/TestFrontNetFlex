@@ -1,0 +1,13 @@
+*{
+	box-sizing:border-box;
+}
+html, body{
+	font-family: 'Ubuntu', sans-serif;
+}
+.navbar-inner{
+	border-radius: none !important;
+}
+.carousel-item img{
+	max-height: 400px;
+	object-fit: cover;
+}
