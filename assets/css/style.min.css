@@ -1,0 +1,100 @@
+*{
+	box-sizing:border-box;
+}
+html, body{
+	font-family: 'Ubuntu', sans-serif;	
+	transition: all .3s linear;
+}
+.container {
+	margin: 0 auto;
+    display: table !important;
+    position: relative;
+    max-width: 80%;
+}
+.btn-default{
+	background: #1079f6;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	width: 300px;
+	max-width: 80%;
+}
+.btn-default:hover{	
+	background: #1079f6;
+	color: #fff;	
+	text-decoration: none;	
+	box-shadow: 0px 2px 5px 0px #504e4e;
+}
+.top-menu{
+	background: #1079f6 !important;
+	max-height: 15px;
+}
+.top-menu ul{
+    display: -webkit-box;
+}
+.top-menu ul li a{
+	color: #fff !important;
+}
+.top-menu ul li:hover{	
+	background: #ffffff3d;
+}
+.top-menu ul li:active{	
+	background: #0955af80;
+}
+.top-menu ul li:hover:last-child{	
+	background: transparent;
+}
+.top-menu .entrar:hover{
+	background: #ffffff3d;
+}
+.desktop-menu li a{
+	color: #d8d8d8  !important;
+	font-size: 1.5em; 
+}
+.desktop-menu .nav-item:hover{
+	background: #eaeaea29;
+}
+.desktop-menu li:hover:last-child{
+	background: transparent;;
+}
+.desktop-menu li a:hover{
+	background: #0955af80;
+	color: #fff !important;
+}
+.desktop-menu .navbar-brand img{
+	max-width: 200px;
+}
+.text-destaque {
+	color: #fff;
+    top: 35%;
+}
+.carousel-inner h2, .carousel-inner h1 {
+    bottom: 50px;
+    font-weight: 900;
+}
+.carousel-inner .col-md-10{
+	margin-top: -15px;
+}
+.carousel-inner h1{
+    border: 6px solid #fff;
+    letter-spacing: -13px;
+    padding: 0 23px 0px 8px;
+    font-size: 7em;
+}
+.carousel-inner h2{
+    max-width: 100px;
+    font-size: 5em;
+    line-height: 40px;
+}
+.servicos-online img{
+	max-width: 70px;
+	margin-left: -10px;
+}
+
+
+@media ( max-width: 981px){
+.carousel-inner .item img{
+	height: 300px;
+	object-fit: cover;
+}	
+}

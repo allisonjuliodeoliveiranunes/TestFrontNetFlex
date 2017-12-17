@@ -1,0 +1,156 @@
+/* VARIABLES */
+/* BASE */
+/* line 10, C:/xampp/htdocs/teste/TestFrontNetFlex/assets/css/sass/style.scss */
+
+
+/* line 26, C:/xampp/htdocs/teste/TestFrontNetFlex/assets/css/sass/style.scss */
+.container {
+  overflow: hidden;
+  *zoom: 1;
+  margin: 0 20px;
+}
+
+/* line 31, C:/xampp/htdocs/teste/TestFrontNetFlex/assets/css/sass/style.scss */
+.site-content {
+  padding-top: 66px;
+}
+
+/* HEADER */
+/* line 36, C:/xampp/htdocs/teste/TestFrontNetFlex/assets/css/sass/style.scss */
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 66px;
+  line-height: 66px;
+  color: #fff;
+  background-color: #3f51b5;
+}
+
+/* line 48, C:/xampp/htdocs/teste/TestFrontNetFlex/assets/css/sass/style.scss */
+.header__logo {
+  font-weight: 700;
+  padding: 0 25px;
+  float: left;
+}
+
+/* MENU */
+/* line 55, C:/xampp/htdocs/teste/TestFrontNetFlex/assets/css/sass/style.scss */
+.menu {
+  float: left;
+}
+
+/* line 58, C:/xampp/htdocs/teste/TestFrontNetFlex/assets/css/sass/style.scss */
+.menu a {
+  padding: 0 10px;
+}
+
+/* line 62, C:/xampp/htdocs/teste/TestFrontNetFlex/assets/css/sass/style.scss */
+.menu a:hover {
+  color: #c5cae9;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 768px) {
+  /* line 69, C:/xampp/htdocs/teste/TestFrontNetFlex/assets/css/sass/style.scss */
+  .site-pusher,
+  .site-container {
+    height: 100%;
+  }
+  /* line 74, C:/xampp/htdocs/teste/TestFrontNetFlex/assets/css/sass/style.scss */
+  .site-container {
+    overflow: hidden;
+  }
+  /* line 78, C:/xampp/htdocs/teste/TestFrontNetFlex/assets/css/sass/style.scss */
+  .site-pusher {
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+  /* line 83, C:/xampp/htdocs/teste/TestFrontNetFlex/assets/css/sass/style.scss */
+  .site-content {
+    position: absolute;
+    top: 66px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding-top: 0;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+  /* line 94, C:/xampp/htdocs/teste/TestFrontNetFlex/assets/css/sass/style.scss */
+  .header {
+    position: static;
+  }
+  /* line 98, C:/xampp/htdocs/teste/TestFrontNetFlex/assets/css/sass/style.scss */
+  .header__icon {
+    position: relative;
+    display: block;
+    float: left;
+    width: 50px;
+    height: 66px;
+    cursor: pointer;
+  }
+  /* line 107, C:/xampp/htdocs/teste/TestFrontNetFlex/assets/css/sass/style.scss */
+  .header__icon:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 1rem;
+    height: 0;
+    top: 16px;
+    left: 15px;
+    -webkit-box-shadow: 0 10px 0 1px #fff, 0 16px 0 1px #fff, 0 22px 0 1px #fff;
+    -moz-box-shadow: 0 10px 0 1px #fff, 0 16px 0 1px #fff, 0 22px 0 1px #fff;
+    box-shadow: 0 10px 0 1px #fff, 0 16px 0 1px #fff, 0 22px 0 1px #fff;
+  }
+  /* line 119, C:/xampp/htdocs/teste/TestFrontNetFlex/assets/css/sass/style.scss */
+  .menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #3849a2;
+    /*    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;*/
+    width: 250px;
+    -webkit-transform: translateX(-250px);
+    -moz-transform: translateX(-250px);
+    -ms-transform: translateX(-250px);
+    -o-transform: translateX(-250px);
+    transform: translateX(-250px);
+  }
+  /* line 131, C:/xampp/htdocs/teste/TestFrontNetFlex/assets/css/sass/style.scss */
+  .menu a {
+    display: block;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-bottom: 1px solid #3f51b5;
+  }
+  /* line 143, C:/xampp/htdocs/teste/TestFrontNetFlex/assets/css/sass/style.scss */
+  .with--sidebar .site-pusher {
+    -webkit-transform: translateX(250px);
+    -moz-transform: translateX(250px);
+    -ms-transform: translateX(250px);
+    -o-transform: translateX(250px);
+    transform: translateX(250px);
+  }
+  /* line 146, C:/xampp/htdocs/teste/TestFrontNetFlex/assets/css/sass/style.scss */
+  .with--sidebar .site-cache {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+/*# sourceMappingURL=../style.map */

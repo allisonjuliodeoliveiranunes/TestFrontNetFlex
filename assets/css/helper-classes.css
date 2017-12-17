@@ -1,4 +1,9 @@
-
+.right-zero{
+    right: 0;
+}
+.left-zero{
+    left: 0;
+}
 .display-table{
     display:table;
 }
@@ -17,6 +22,9 @@
 }
 .clearfix:after {
     clear: both;
+}
+.zindex-0 {
+    z-index: 0;
 }
 .zindex-1 {
     z-index: 1;
@@ -60,6 +68,10 @@
 .text-decoration-none {
     text-decoration: none
 }
+.text-fit {
+    font-weight: 100;
+}
+
 .align-top {
     vertical-align: top;
 }
@@ -80,11 +92,21 @@
     display: flex;
     justify-content: center;
 }
+.center-block{
+    margin: 0 auto;
+}
+.center-block-absolute{
+    left: 0;
+    right: 0;
+}
 .fit {
     max-width: 100%;
 }
 .half-width {
     width: 50%;
+}
+.box-width {
+    max-width: 80%;
 }
 .full-width {
     width: 100%;
@@ -107,13 +129,21 @@
 .white {
     color: #fff;
 }
-
+.whiteImp {
+    color: #fff !important;
+}
 .green{
     color: #90bf2e;
 }
 
 .black {
     color: #333;
+}
+.black-80 {
+    color: #585757;
+}
+.black-50 {
+    color: #888787;
 }
 .gray {
     color: #999999;
@@ -122,20 +152,23 @@
 .red{    
     color: #F44336;
 }
+.blue{
+    color: #1079f6;
+}
 .dark-gray {
     color: #95a5a6;
 }
 .white-bg {
-    background-color: #fff;
+    background-color: #fff !important;
 }
-.white-bg {
-    background-color: #fff;
+.blue-bg {
+    background-color: #1079f6;
 }
 .transparent-bg {
     background-color: rgba(0, 0, 0, 0);
 }
 .gray-bg {
-    background-color: #c4c4c4;
+    background-color: #586064;
 }
 .dark-gray-bg {
     background-color: #95a5a6;
@@ -144,9 +177,11 @@
     background-color: #f4f4f4;
 }
 .transparent-bg {
-    background-color: transparent;
+    background-color: transparent !important;
 }
-
+.grey-bg {
+    background-color:#777575;
+}
 .green-bg {
     background-color: #90bf2e;
 }
@@ -196,13 +231,13 @@
     border-top: none;
 }
 .border-right-none {
-    border-right: none;
+    border-right: none !important;
 }
 .border-bottom-none {
-    border-bottom: none;
+    border-bottom: none !important;
 }
 .border-left-none {
-    border-left: none;
+    border-left: none !important;
 }
 .border-all-white {
     border: 1px solid #ffffff
@@ -238,12 +273,14 @@
 .border-left-red {
     border-left: 1px solid #F44336;
 }
-
+.radius-none {
+    border-radius: 0 !important;
+}
 .radius-circle {
-    border-radius: 50%
+    border-radius: 50%;
 }
 .radius {
-    border-radius: 3px;
+    border-radius: 2px;
 }
 .radius-top {
     border-radius: 3px 3px 0 0;
@@ -257,14 +294,15 @@
 .radius-left {
     border-radius: 3px 0 0 3px;
 }
-
+.box-shadow-none{
+    box-shadow: none !important;
+}
 .hover:hover, .hover:focus, hover:active {
-    transition: ease-in-out 0.5s;
-    opacity: 0.7;
+    transition: ease-in-out 0.3s;
     cursor: pointer;
 }
 .hover {
-    transition: ease-in-out 0.5s;
+    transition: ease-in-out 0.3s;
 }
 .pointer {
     cursor: pointer
@@ -474,6 +512,15 @@
 }
 .margin-top-four {
     margin-top: 4em;
+}
+.margin-top-five {
+    margin-top: 5em;
+}
+.margin-top-six {
+    margin-top: 5em;
+}
+.margin-top-seven {
+    margin-top: 7em;
 }
 .margin-bottom-none {
     margin-bottom: 0;

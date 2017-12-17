@@ -1,69 +1,77 @@
 *{
 	box-sizing:border-box;
 }
+a, a:hover{
+  text-decoration: none;
+}
+ul li{
+  list-style: none;
+}
 html, body{
 	font-family: 'Ubuntu', sans-serif;	
 	transition: all .3s linear;
+  background: #f8f9fa4f;
+}
+#footer{
+  background: #f8f9fa;
 }
 .container {
 	margin: 0 auto;
-    display: table !important;
-    position: relative;
-    max-width: 80%;
+  display: table !important;
+  position: relative;
+  max-width: 80%;
+}
+.btn-bt{
+  background: #1079f6;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+}
+.btn-bt:hover, .btn-bt:focus, .btn-bt:visited{ 
+  background: #0870ea !important;
+  color: #fff !important;   
+  box-shadow: 0px 2px 2px 0px #959696;
+  border: none;
+}
+.btn-default{
+	background: #1079f6;
+	color: #fff;
+	text-transform: uppercase;
+	width: 300px;
+	max-width: 80%;
+}
+.btn-default:hover, .btn-default:focus, .btn-default:visited{	
+	background: #1079f6;
+	color: #fff;		
+	box-shadow: 0px 2px 2px 0px #959696;
 }
 .top-menu{
-	background: #1079f6 !important;
-	border: none !important;
-	border-radius: 0 !important;
-	margin: 0 ! important;
 	max-height: 15px;
 }
 .top-menu ul{
-    display: -webkit-box !important;
-    position: relative;
-    padding: 0 !important;
-    right: 0;
+    display: -webkit-box;
 }
 .top-menu ul li a{
 	color: #fff !important;
 }
 .top-menu ul li:hover{	
 	background: #ffffff3d;
-	transition: all .3s linear;
 }
 .top-menu ul li:active{	
 	background: #0955af80;
-	transition: all .3s linear;
 }
 .top-menu ul li:hover:last-child{	
 	background: transparent;
 }
-.top-menu .entrar{
-	border-radius: 2px;
-	transition: all .3s linear;
-}
 .top-menu .entrar:hover{
 	background: #ffffff3d;
-	transition: all .3s linear;
-}
-.desktop-menu{
-    z-index: 2;
-    background-color: transparent !important;
-    max-width: 80%;
-    border: none;
-    position: relative;
-    margin: 0 auto;
 }
 .desktop-menu li a{
 	color: #d8d8d8  !important;
 	font-size: 1.5em; 
-	transition: all .3s linear;
-	z-index: 4;
-	position: relative;
 }
 .desktop-menu .nav-item:hover{
 	background: #eaeaea29;
-	transition: all .3s linear;
 }
 .desktop-menu li:hover:last-child{
 	background: transparent;;
@@ -71,49 +79,113 @@ html, body{
 .desktop-menu li a:hover{
 	background: #0955af80;
 	color: #fff !important;
-	transition: all .3s linear;
 }
 .desktop-menu .navbar-brand img{
 	max-width: 200px;
 }
-.carousel {
-    position: absolute;
-    top: 50px;
-    z-index: 0;
+.mobile-menu .navbar-collapse{
+  right: 0;
 }
-.carousel-inner .item img{
-	height: 500px;
-	object-fit: cover;
-	width: 100%;
+.mobile-menu .navbar-brand img{
+  max-width: 150px;
+}
+.navbar-toggle:hover{
+  background: transparent !important;
+}
+.mobile-menu button:hover{
+  background: #586064 !important;
 }
 .text-destaque {
-	color: #ffffffc9;
-    position: absolute;
-    top: 35%;
-    left: 0;
-    right: 0;
+	color: #fff;
+  top: 35%;
 }
 .carousel-inner h2, .carousel-inner h1 {
-    bottom: 50px;
-    right: 0;
-    left: 0;
-    display: table;
-    padding: 10px;
-    font-weight: 900;
-    font-size: 40px;
+  bottom: 50px;
+  font-weight: 900;
 }
 .carousel-inner .col-md-10{
 	margin-top: -15px;
 }
 .carousel-inner h1{
-    border: 7px solid #ffffffc9;
-    letter-spacing: -13px;
-    padding: 0 23px 0px 8px;
-    font-size: 9em;
+  border: 6px solid #fff;
+  letter-spacing: -13px;
+  padding: 0 23px 0px 8px;
+  font-size: 7em;
 }
 .carousel-inner h2{
-	 max-width: 100px;
-    font-size: 6em;
-    line-height: 58px;
-    margin: 0;
+  max-width: 100px;
+  font-size: 5em;
+  line-height: 40px;
+}
+.servicos-online img{
+	max-width: 70px;
+	margin-left: -10px;
+}
+.servicos-online h1{
+  font-size: 40px;
+  padding-right: 2em;
+}
+.servicos-online a:hover{
+  text-decoration: none !important;
+}
+.fique-por-dentro img{
+  width: 100%;
+  object-fit: cover;
+}
+.fique-por-dentro a{
+  transition: all .4s linear;
+}
+.fique-por-dentro .blog:hover{
+  position: relative;
+  box-shadow: 0 1px 5px 1px #a0a0a0;
+  margin-top: -7px;
+}
+.fique-por-dentro span{
+  top: -15px;
+}
+.fique-por-dentro .blog .fa{
+  margin-top: -10px;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.fique-por-dentro .blog .fa:hover{
+  box-shadow: 0 1px 1px 1px #265184;
+}
+.fique-por-dentro .blog img{
+  width: 100%;
+  object-fit: cover;
+  height: 150px;
+}
+@media ( max-width: 992px){
+.carousel-inner .item img{
+	height: 350px;
+	object-fit: cover;
+}	
+.carousel-inner h1 {
+  border: 6px solid #ffffffba;
+  letter-spacing: -4px;
+  padding: 0 10px 0px 6px;
+  font-size: 4em;
+}
+.carousel-inner h2 {
+  max-width: 97px;
+  font-size: 4em;
+  line-height: 30px;
+}
+.carousel-inner .col-md-10 {
+  margin-top: -11px;
+  margin-left: 1px;
+}
+}
+@media ( max-width: 640px){
+.carousel-inner .textDT {
+  max-width: 90%;
+  position: absolute;
+  right: -65px;
+  top: -40px;
+  padding: 0;
+  margin: 0;
+}
 }
