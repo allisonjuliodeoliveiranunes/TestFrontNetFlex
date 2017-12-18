@@ -1,7 +1,7 @@
 /* Estilo formulário de preenchimento */
 
 .form-home  select.form-control:not([size]):not([multiple]) {
-    height: 34px !important ;
+  height: 34px !important ;
 }
 
 .form-home .form-control{
@@ -13,16 +13,54 @@
 .form-home .border-right-gray{
   border-right: 1px solid #dcd9d9;
 }
-
 .form-home select {
-    background-color: #fff;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-      appearance: none;
-    width: 100%;
-    border-color: #444 #333 #333 #444!important;
-    background-image: url(seta-baixo.png);
-    background-repeat: no-repeat;
-    background-position: 90% 12px;
-    background-size: 10px;
+  background-color: #fff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  border-color: #444 #333 #333 #444!important;
+  background-image: url(seta-baixo.png);
+  background-repeat: no-repeat;
+  background-position: 90% 12px;
+  background-size: 10px;
+}
+#login-pop .modal-content{
+  position: relative;
+  margin: 0 auto;
+  display: table;
+  top: 100px;
+}
+#login-pop .modal-header .close {
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  font-size: 30px;
+}
+#login-pop .modal-footer{
+  text-align: center;  
+  display: block;
+}
+#login-pop .modal-footer button{
+  width: 40px;
+  height: 40px;
+}
+#login-pop .modal-footer .face:hover{
+  background-color: #3b5998;
+}
+#login-pop .modal-footer .gplus:hover{
+  background-color: #c4302b;
+}
+#login-pop .modal-footer .linkedin:hover{
+  background-color: #007bb5;
+}
+#login-pop .modal-footer .rss:hover{
+  background-color: #fd8900;
+}
+#login-pop .modal-title img{
+  max-width: 150px;
+}
+.fade{
+  background: rgba(8, 43, 84, 0.66);
+  padding-right: 0 !important;
 }

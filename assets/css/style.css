@@ -140,6 +140,15 @@ html, body{
   min-width: 300px;
   padding: 1em;
 }
+#search-area-mobile {
+  right: 0;
+  top: 60px;
+  width: 100%;
+  min-width: 300px;
+  padding: 20px;
+  z-index: 4;
+  background: #586064;
+}
 .desktop-menu input[type=text] {
   width: 100%;
   box-sizing: border-box;
@@ -164,7 +173,10 @@ html, body{
   max-width: 150px;
 }
 .mobile-menu  .navbar-toggle:hover{
-  background: transparent !important;
+  background: #586064 !important;
+}
+.hover-navbar{
+  background: #586064 !important;
 }
 .mobile-menu button:hover{
   background: #586064 !important;
@@ -271,7 +283,13 @@ html, body{
 #footer .logo img{
   max-width: 150px;
 }
+
+/* quebra mobile */
 @media ( max-width: 992px){
+.container{
+ max-width: 100%;
+ padding: 0;
+}
 .carousel-inner .carousel-item img{
 	height: 350px;
 	object-fit: cover;
@@ -291,7 +309,43 @@ html, body{
   margin-top: -11px;
   margin-left: 1px;
 }
+.servicos-online{
+  margin-top: 1em !important;
+  text-align: center;
 }
+.servicos-online h1{
+  padding-right: 0;
+  padding: 10px 0;
+}
+.form-home{
+  padding: 0 40px !important;
+  border-bottom: 0 !important;
+  border-top: 0 !important;
+}
+.form-home h2{  
+  text-align: center;
+  font-size: 33px;
+}
+.form-home span{
+  text-align: center;
+  font-size: 15px;
+}
+.form-home .col-md-2{
+  padding: 20px 0;
+  border-right: 0 !important;
+  border-top: 1px solid #f4f4f4;
+}
+.form-home .col-md-2:first-child{
+  border-top: 0 !important;
+}
+.form-home .btn-bt{
+ padding: 1em 3em !important;
+}
+}
+
+
+
+
 @media ( max-width: 640px){
 .carousel-inner .textDT {
   max-width: 90%;

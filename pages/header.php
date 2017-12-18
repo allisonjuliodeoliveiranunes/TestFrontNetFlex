@@ -5,7 +5,7 @@
             <li class="hover"><a href="#" class="hover"><span class="text-thin">Disque Detran</span></a></li>
             <li class="hover"><a href="#" class="hover"><span class="text-thin"> Dúvidas Frequentes</span></a></li>
             <li class="hover"><a href="#" class="hover"><span class="bold"> Cadastre-se</span></a></li>
-            <li class="hover"><a href="#" class="hover"><span class="entrar border-all-white padding-halve hover radius"> Entrar</span></a></li>
+            <li class="hover"><button type="button" class="entrar border-all-white padding-halve hover radius transparent-bg white margin-top-half" data-toggle="modal" data-target="#login-pop">Entrar</button></li>
           </ul>
         </div>
       </nav>
@@ -90,17 +90,22 @@
    <!-- Menu mobile -->
    <nav class="mobile-menu navbar-default hidden-md hidden-lg" role="navigation">
   <div class="navbar-header blue-bg">
-  	<button type="button" class="navbar-toggle hover border-none radius-none margin-none padding-two" data-toggle="collapse" data-target=".navbar-collapse">
+  	<button  type="button" class="navbar-toggle hover border-none radius-none margin-none padding-two" data-toggle="collapse" data-target=".navbar-collapse">
 		<i class="fa fa-bars white fa-2x" aria-hidden="true"></i>
     </button>
-    <button type="button" class="search navbar-toggle hover border-none radius-none margin-none padding-two" data-toggle="collapse" data-target=".navbar-collapse">
+
+    <button type="button" id="icon-search-mobile" class="navbar-toggle hover border-none radius-none margin-none padding-two" data-target=".hover-navbar">
 		<i class="fa fa-search white fa-2x" aria-hidden="true"></i>
-    </button>     
+    </button> 
+    <form id="search-area-mobile" class="absolute display-none">
+      <input type="text" class="radius-one form-control" name="search" placeholder="O que procura?" >
+    </form>
+
      <a class="navbar-brand padding-one" href="#"><img src="assets/images/logo_detran.png"></a>
   </div>
   <div class="navbar-collapse collapse border-none gray-bg box-width text-left zindex-4 absolute">
     <ul class="nav navbar-nav navbar-left padding-two">
-    	<li class="text-size-150 hover"><a href="#" class="entrar border-all-white padding-halve hover radius whiteImp">Entrar</a></li>
+    	<li class="text-size-150 hover"><button class="entrar border-all-white padding-halve hover radius whiteImp transparent-bg margin-left-one" data-toggle="modal" data-target="#login-pop">Entrar</button></li>
         <li class="text-size-150 white!"><a href="#" class="whiteImp bold">Cadastre-se</a></li>
         <li class="text-size-150 white!"><a href="#about"  class="whiteImp">Dúvidas Frequentes</a></li>
         <li class="text-size-150 white!"><a href="#about"  class="whiteImp">Habilitação</a></li>
@@ -122,6 +127,39 @@
         $("#search-area").slideToggle("slow");
     });
 });
+    $(document).ready(function(){
+    $("#icon-search-mobile").click(function(){
+        $("#search-area-mobile").slideToggle("fast");
+    });
+});
 </script>
 
 
+<div class="modal fade" id="login-pop" role="dialog">
+    <div class="modal-dialog">    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header blue-bg">
+          <button type="button" class="close white" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title text-center"><img src="assets/images/logo_detran.png" class="box-width center-block"><br><span class="white">Acesso à sua conta</span></h4>
+        </div>
+        <div class="modal-body">
+          <form id="login-area" class="">
+                <label class="padding-top-halve text-size-120 blue text-fit">Insira seu e-mail ou CPF</label>
+                <input class="form-control" type="text" name="login" placeholder="Ex: Allison Julio" >
+                <label class="padding-top-one text-size-120 blue text-fit"">Insira sua senha</label>
+                <input class="form-control" type="password" name="login" placeholder="xxxx" >
+                <button type="button" class="btn btn-default center-block padding-top-halve padding-bottom-halve display-table text-center margin-top-two" data-dismiss="modal">ENTRAR</button>
+            </form>
+        </div>
+        <div class="modal-footer text-left table">
+          <span class="text-left"> Ou faça login usando</span>
+          <button type="button" class="face grey-bg border-none padding-one" data-dismiss="modal"><i class="fa fa-facebook white fa-2x" aria-hidden="true"></i></button>
+          <button type="button" class="gplus grey-bg border-none padding-one" data-dismiss="modal"><i class="fa fa-google-plus white fa-2x" aria-hidden="true"></i></button>
+          <button type="button" class="linkedin grey-bg border-none padding-one" data-dismiss="modal"><i class="fa fa-linkedin white fa-2x" aria-hidden="true"></i></button>
+          <button type="button" class="rss grey-bg border-none padding-one" data-dismiss="modal"><i class="fa fa-rss white fa-2x" aria-hidden="true"></i></button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
