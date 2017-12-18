@@ -15,6 +15,7 @@
         <!-- Estilo -->
     <link href="assets/css/style.scss.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/custom-style-bootstrap.css" rel="stylesheet">
         <!-- Compl. Css -->
     <link href="assets/css/helper-classes.css" rel="stylesheet">
     <!--- js -->
@@ -35,7 +36,7 @@
             </ol>
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
-              <div class="item active">
+              <div class="carousel-item active">
                 <img src="assets/images/banner-inicila-detran-mg.png" alt="Libras" class="fit">
                 <div class="row text-destaque absolute center-block-absolute">
                   <div class="col-md-6 col-sm-4 col-xs-4"></div>
@@ -128,9 +129,10 @@
         </a>
       </div>
     </div> 
-      <a href="#" class="btn-default text-size-120 relative center-block padding-one text-center margin-top-four margin-bottom-one">ver lista completa</a>
-
-      <form class="row border-top-gray border-bottom-gray padding-one margin-top-four">
+    <!-- Btn Default -->
+      <a href="#" class="btn-default text-size-120 relative center-block padding-one text-center margin-top-four margin-bottom-one hover text-decoration-none">ver lista completa</a>
+    <!-- Form do meio da página com os selects menus -->
+      <form class="form-home row border-top-gray border-bottom-gray padding-one margin-top-four">
         <div class="col-md-2 border-right-gray">
           <h2 class="black-80">Newsletter</h2>
           <span class="black-80">Desafio aqui é customizar o css do bootstrap</span>
@@ -138,14 +140,15 @@
         <div class="col-md-2 form-group border-right-gray ">
             <span class="text-fit margin-bottom-one black-80">Primeiro Campo</span><br>
               <select class="form-control form-group text-size-120 blue" id="sel1">
+                <i class="fa fa-plus" aria-hidden="true"></i> 
                 <option class="text-size-120">Selecione</option>
                 <option class="text-size-120">2</option>
               </select>   
         </div>
         <div class="col-md-2 form-group border-right-gray ">
             <span class="text-fit margin-bottom-one black-80">Segundo Campo ativo</span><br>
-              <select class="form-control form-group text-size-120 blue" id="sel2">
-                <option class="text-size-120">Selecione</option>
+              <select class="option form-control form-group text-size-120 blue" id="sel2">
+                <option class="text-size-120 ">Selecione</option>
                 <option class="text-size-120">2</option>
               </select>       
         </div>
@@ -160,28 +163,25 @@
         <div class="col-md-2">
           <button class="btn-bt padding-left-one padding-right-one padding-top-halve padding-bottom-halve center-block margin-top-one text-size-120">Enviar</button>
         </div>
-      </form>
+      </form><!-- End Form  -->
       <!-- acordeon call colapse.php -->
       <div class="row">
-        <div id="colapse" class="col-md-5"></div>
+        <div id="colapse" class="col-md-5"></div><!-- End acordeon  -->
         <div class="fique-por-dentro col-md-7">
           <img src="assets/images/carro-detran-sp.png">
           <span class="black-80 text-size-250 padding-top-one padding-bottom-one">Fique por Dentro </span> <a href="" class="btn-bt padding-left-one padding-right-one padding-top-halve padding-bottom-halve center-block text-size-120 pull-right margin-half"><i class="fa fa-plus white padding-right-halve text-size-70" aria-hidden="true"></i>   Noticias</a>
-          <div class="row margin-top-two padding-bottom-one padding-left-one">
-            <a href="" class="col-md-4 padding-halve blog hover"> <img src="assets/images/barber.png"><br>
+          <div class="row margin-top-two padding-bottom-one padding-left-one padding-right-one">
+            <a href="" class="col-md-4 padding-halve blog hover"> <img src="assets/images/carro.png"><br>
               <i class="fa fa-plus white blue-bg relative display-table text-center center-block padding-one" aria-hidden="true"></i><br>
-                <span class="black-80 text-size-120 text-just relative">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</span>
+                <span class="black-80 text-size-120 text-just relative">Última semana para licenciar veículos com placa terminada em 7 e caminhões com final 2</span>
             </a>
-            <a href="" class="col-md-4 padding-halve blog hover"> <img src="assets/images/barber.png"><br>
+            <a href="" class="col-md-4 padding-halve blog hover"> <img src="assets/images/cidade.png"><br>
               <i class="fa fa-plus white blue-bg relative display-table text-center center-block padding-one" aria-hidden="true"></i><br>
-                <span class="black-80 text-size-120 text-just relative">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</span>
+                <span class="black-80 text-size-120 text-just relative">Detran.SP investe R$ 8,1 milhões em mais sete cidades para ações de segurança no trânsito</span>
             </a>
-            <a href="" class="col-md-4 padding-halve blog hover"> <img src="assets/images/barber.png"><br>
+            <a href="" class="col-md-4 padding-halve blog hover"> <img src="assets/images/medicos.png"><br>
               <i class="fa fa-plus white blue-bg relative display-table text-center center-block padding-one" aria-hidden="true"></i><br>
-                <span class="black-80 text-size-120 text-just relative">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</span>
+                <span class="black-80 text-size-120 text-just relative">Detran.SP descobre cobrança indevida para aprovação em exame prático de Taubaté</span>
             </a>
           </div>
         </div>

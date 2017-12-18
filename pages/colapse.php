@@ -106,7 +106,7 @@
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
       </div>
     </div>
-    <p class="text-center text-size-120 margin-top-two margin-bottom-one">Na página dúvidas frequente você encontrará respostas para todas as pergutnas</p>
+    <p class="text-center text-size-120 margin-top-two margin-bottom-one box-width relative center-block padding-top-one padding-bottom-one">Na página dúvidas frequente você encontrará respostas para todas as pergutnas</p>
     <a href="#" class="btn-default text-size-120 relative center-block padding-one text-center margin-top-one margin-bottom-one">dúvidas frequentes</a>
   </div> 
 </div>

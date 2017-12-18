@@ -12,15 +12,22 @@ html, body{
 	transition: all .3s linear;
   background: #f8f9fa4f;
 }
+/* Footer */
 #footer{
-  background: #f8f9fa;
+  background: hsla(0, 0%, 94%, 1);
 }
+/* Fim */
+
+/* Laoyut em caixa do site */
 .container {
 	margin: 0 auto;
   display: table !important;
   position: relative;
   max-width: 80%;
 }
+/* Fim */
+
+/* Botões padrões */
 .btn-bt{
   background: #1079f6;
   color: #fff;
@@ -40,11 +47,14 @@ html, body{
 	width: 300px;
 	max-width: 80%;
 }
-.btn-default:hover, .btn-default:focus, .btn-default:visited{	
-	background: #1079f6;
-	color: #fff;		
+.btn-default:hover, .btn-default:visited, .btn-default:focus{	
+	background: #1079f6 !important;
+	color: #fff !important;		
 	box-shadow: 0px 2px 2px 0px #959696;
 }
+/* Fim */
+
+/* Topo Menu  */
 .top-menu{
 	max-height: 15px;
 }
@@ -66,6 +76,9 @@ html, body{
 .top-menu .entrar:hover{
 	background: #ffffff3d;
 }
+/* Fim */
+
+/* Menu Principal */
 .desktop-menu li a{
 	color: #d8d8d8  !important;
 	font-size: 1.5em; 
@@ -73,28 +86,92 @@ html, body{
 .desktop-menu .nav-item:hover{
 	background: #eaeaea29;
 }
+.desktop-menu .nav-item:hover a{
+    color: #fff !important;
+}    
 .desktop-menu li:hover:last-child{
 	background: transparent;;
 }
-.desktop-menu li a:hover{
-	background: #0955af80;
-	color: #fff !important;
+.desktop-menu .drop-servicos:before{
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  transform: rotate(135deg);
+  position: absolute;
+  right: 50px;
+  top: -5px;
+  z-index: 3;
+}
+.desktop-menu .drop-servicos{
+  width: 600px;
+  display: none;
+  right: 0;
+}
+.desktop-menu .servicos-list:hover .drop-servicos{
+  display: block;
+}
+.desktop-menu .drop-servicos img{
+  max-width: 50px;  
+  margin-left: -9px;
+}
+.desktop-menu .drop-servicos a{
+  padding: 0px 7px;
+}
+.desktop-menu .drop-servicos a:hover {
+  background: #0955af12;
+}
+.desktop-menu .drop-servicos .btn-default {
+  position: relative;
+  display: table;
+  background: #1079f6;
+  text-align: center !important;
+  font-size: 14px !important;
+  padding: 6px 0;
+  margin: auto;
+  min-width: 100%;
 }
 .desktop-menu .navbar-brand img{
 	max-width: 200px;
 }
+#search-area{
+  right: 10px;
+  top: 55px;
+  min-width: 300px;
+  padding: 1em;
+}
+.desktop-menu input[type=text] {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('search-icon.png');
+  background-position: 7px 13px;
+  background-size: 25px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+/* Fim */
+
+/* Menu Mobile */
 .mobile-menu .navbar-collapse{
   right: 0;
 }
 .mobile-menu .navbar-brand img{
   max-width: 150px;
 }
-.navbar-toggle:hover{
+.mobile-menu  .navbar-toggle:hover{
   background: transparent !important;
 }
 .mobile-menu button:hover{
   background: #586064 !important;
 }
+/* Fim */
+
+/* Banner Carrossel destaue e Texto de destaque do Banner Principal e */
 .text-destaque {
 	color: #fff;
   top: 35%;
@@ -117,6 +194,9 @@ html, body{
   font-size: 5em;
   line-height: 40px;
 }
+/* Fim */
+
+/* Serviços Online */
 .servicos-online img{
 	max-width: 70px;
 	margin-left: -10px;
@@ -128,6 +208,9 @@ html, body{
 .servicos-online a:hover{
   text-decoration: none !important;
 }
+/* Fim */
+
+/* Fique por dentro */
 .fique-por-dentro img{
   width: 100%;
   object-fit: cover;
@@ -137,11 +220,29 @@ html, body{
 }
 .fique-por-dentro .blog:hover{
   position: relative;
-  box-shadow: 0 1px 5px 1px #a0a0a0;
+  box-shadow: 0 1px 5px 1px #0c52a52e;
   margin-top: -7px;
 }
 .fique-por-dentro span{
   top: -15px;
+}
+.panel-group .fa{
+  font-size: 13px;
+  text-align: center;
+  padding: 4px;
+  transition: all .5s linear;
+}
+.panel-group a:focus + .panel-heading{
+  background-color: red !important;
+}
+.panel-group a:focus .fa{
+  transition: all .5s linear;
+  color: #fff;
+  background: #1079f6;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  transform: rotate(135deg);
 }
 .fique-por-dentro .blog .fa{
   margin-top: -10px;
@@ -158,8 +259,20 @@ html, body{
   object-fit: cover;
   height: 150px;
 }
+#footer .fa-youtube-play:hover{
+  color: red;
+}
+#footer .fa-facebook:hover{
+  color: #3b5998;
+}
+#footer .app-dowload img{
+  max-width: 100px;
+}
+#footer .logo img{
+  max-width: 150px;
+}
 @media ( max-width: 992px){
-.carousel-inner .item img{
+.carousel-inner .carousel-item img{
 	height: 350px;
 	object-fit: cover;
 }	

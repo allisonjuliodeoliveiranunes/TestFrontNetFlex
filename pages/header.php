@@ -1,22 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <!-- Bootstrap -->
-    <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
-        <!-- Icons -->
-    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-        <!-- Estilo -->
-    <link href="assets/css/style.scss.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
-        <!-- Compl. Css -->
-    <link href="assets/css/helper-classes.css" rel="stylesheet">
-    <!--- js -->
-    <script src="assets/bootstrap/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-</head>
-<body>
 	<!-- Menu topo -->
 	 <nav class="top-menu navbar navbar-inverse hidden-sm hidden-xs border-none margin-none radius-none blue-bg">
         <div class="container container-fluid">
@@ -42,8 +23,67 @@
             <li class="nav-item padding-top-two padding-left-halve padding-right-halve hover"><a class="nav-link hover realtive" href="#">Veículo</a></li>
             <li class="nav-item padding-top-two padding-left-halve padding-right-halve hover"><a class="nav-link hover realtive" href="#">Infrações</a></li>
             <li class="nav-item padding-top-two padding-left-halve padding-right-halve hover"><a class="nav-link hover realtive" href="#">Educação</a></li>
-            <li class="nav-item padding-top-two padding-left-halve padding-right-halve hover"><a class="nav-link hover realtive" href="#">Serviços Online</a></li>
-            <li class="nav-item padding-top-two padding-left-halve padding-right-halve hover"><a class="nav-link hover realtive" href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>       
+            <li class="nav-item padding-top-two padding-left-halve padding-right-halve hover relative servicos-list"><a class="nav-link hover realtive" href="#">Serviços Online <i class="fa fa-angle-down white" aria-hidden="true"></i></a>
+             <!-- Serviços Online first-line-->
+              <div class="drop-servicos absolute white-bg padding-top-two hover">
+                  <div class="row realtive">
+                    <div class="col-md-1"></div>
+                    <a href="" class="col-md-2 text-decoration-none black-80">
+                      <img src="assets/images/icons/consultar-cnh.png"  alt="Consulta de pontos da CNH"><br>
+                      <span class="bold text-size-70 black-80">Consulta de pontos da CNH</span>
+                    </a>
+                    <a href="#" class="col-md-2 text-decoration-none black-80">
+                      <img src="assets/images/icons/solicitação-de-recurso-cnh.png"><br>
+                      <span class="bold text-size-70 black-80">Solicitação de recurso CNH</span>
+                    </a>
+                    <a href="" class="col-md-2 text-decoration-none black-80">
+                      <img src="assets/images/icons/pesquisa-debito-restricoes.png"><br>
+                      <span class="bold text-size-70 black-80">Pesquisa de débitos e restrições</span>
+                    </a>
+                    <a href="" class="col-md-2 text-decoration-none black-80">
+                      <img src="assets/images/icons/agendamento-eda-cnh.png"><br>
+                      <span class="bold text-size-70 black-80">Agendamento da CNH</span>
+                    </a>
+                    <a href="" class="col-md-2 text-decoration-none black-80 hover">
+                      <img src="assets/images/icons/2-via-cnh.png""><br>
+                      <span class="bold text-size-70 black-80">2ª via da CNH</span>
+                    </a>
+                    <div class="col-md-1"></div>
+                  </div>
+                <!-- Serviços Online second-line-->
+                  <div class="row padding-top-halve margin-bottom-two">
+                    <div class="col-md-1"></div>         
+                    <a href="" class="col-md-2 text-decoration-none black-80">
+                      <img src="assets/images/icons/historico-certidao-cnh.png"><br>
+                      <span class="bold text-size-70 black-80">Histórico certidão da CNH</span>
+                    </a>
+                    <a href="" class="col-md-2 text-decoration-none black-80">
+                      <img src="assets/images/icons/faca-o-simulado-de-provas.png"><br>
+                      <span class="bold text-size-70 black-80">Faça o simulado das provas</span>
+                    </a>
+                    <a href="" class="col-md-2 text-decoration-none black-80">
+                      <img src="assets/images/icons/mudanca-endereco-veiculo.png"><br>
+                      <span class="bold text-size-70 black-80">Mudança endereço veículo</span>
+                    </a>
+                    <a href="" class="col-md-2 text-decoration-none black-80">
+                      <img src="assets/images/icons/acompanhe-seus-servicos.png"><br>
+                      <span class="bold text-size-70 black-80">Acompanhe seus serviços</span>
+                    </a>
+                    <a href="" class="col-md-2 text-decoration-none black-80">
+                      <img src="assets/images/icons/indicacao-de-condutor.png"><br>
+                      <span class="bold text-size-70 black-80">Indicação de condutor</span>
+                    </a>
+                    <div class="col-md-1"></div>
+                  </div>
+                  <a href="" class="btn-default text-decoration-none padding-top-two">veja a lista completa</a>
+              </div>
+            </li>
+            <!-- Formulário de Pesquisa -->
+            <li class="nav-item padding-top-two padding-left-halve padding-right-halve hover realtive"><a class="nav-link hover realtive text-right" id="icon-search" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+              <form id="search-area" class="absolute display-none">
+                <input type="text" name="search" placeholder="Pequisar.." >
+              </form>
+            </li>       
           </ul>
        </div> 
    </nav>
@@ -75,5 +115,13 @@
     </ul>
   </div>
 </nav>
-</body>
-</html>
+<!-- Toggle animação formulário de pesquisa -->
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("#icon-search").click(function(){
+        $("#search-area").slideToggle("slow");
+    });
+});
+</script>
+
+

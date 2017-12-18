@@ -1,0 +1,28 @@
+/* Estilo formulário de preenchimento */
+
+.form-home  select.form-control:not([size]):not([multiple]) {
+    height: 34px !important ;
+}
+
+.form-home .form-control{
+  border-radius: 0;
+  border: none; 
+  box-shadow: none;
+  margin-top: 1em;
+}
+.form-home .border-right-gray{
+  border-right: 1px solid #dcd9d9;
+}
+
+.form-home select {
+    background-color: #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+      appearance: none;
+    width: 100%;
+    border-color: #444 #333 #333 #444!important;
+    background-image: url(seta-baixo.png);
+    background-repeat: no-repeat;
+    background-position: 90% 12px;
+    background-size: 10px;
+}
