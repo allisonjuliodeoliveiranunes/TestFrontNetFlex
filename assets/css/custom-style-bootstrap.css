@@ -64,3 +64,26 @@
   background: rgba(8, 43, 84, 0.66);
   padding-right: 0 !important;
 }
+.carrosel-mobile .carousel-control.right, .carrosel-mobile .carousel-control.left{
+  background-image: linear-gradient(to right,rgba(255, 255, 255, 0.59) 0,rgba(255, 255, 255, 0.57) 100%) !important;
+  background-size: 40px;
+}
+.services-carousel .carousel-control.right, .services-carousel .carousel-control.left{
+  background-image: linear-gradient(to right,rgba(255, 255, 255, 0.59) 0,rgba(255, 255, 255, 0.57) 100%) !important;
+  background-size: 40px;
+}
+.carrosel-mobile .carousel-inner>.item>a>img, .carrosel-mobile .carousel-inner>.item>img, .carrosel-mobile .img-responsive, .carrosel-mobile .thumbnail a>img, .carrosel-mobile  .thumbnail>img {
+  height: 200px !important;
+}
+.carrosel-mobile .carousel-control .glyphicon-chevron-left, .carrosel-mobile .carousel-control .glyphicon-chevron-right, .carrosel-mobile .carousel-control .icon-next, .carrosel-mobile .carousel-control .icon-prev{
+  margin-top: -40px;
+  background: #0870ea;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: .4em;
+  left: 5px
+}
+.carrosel-mobile .carousel-control{
+  opacity: 1;
+}

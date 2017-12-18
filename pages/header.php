@@ -121,20 +121,6 @@
   </div>
 </nav>
 <!-- Toggle animação formulário de pesquisa -->
-<script type="text/javascript">
-  $(document).ready(function(){
-    $("#icon-search").click(function(){
-        $("#search-area").slideToggle("slow");
-    });
-});
-    $(document).ready(function(){
-    $("#icon-search-mobile").click(function(){
-        $("#search-area-mobile").slideToggle("fast");
-    });
-});
-</script>
-
-
 <div class="modal fade" id="login-pop" role="dialog">
     <div class="modal-dialog">    
       <!-- Modal content-->
@@ -163,3 +149,16 @@
       
     </div>
   </div>
+
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $("#icon-search").click(function(){
+        $("#search-area").slideToggle("slow");
+    });
+});
+    $(document).ready(function(){
+    $("#icon-search-mobile").click(function(){
+        $("#search-area-mobile").slideToggle("fast");
+    });
+});
+</script>

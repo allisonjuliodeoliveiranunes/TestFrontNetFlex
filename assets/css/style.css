@@ -283,9 +283,14 @@ html, body{
 #footer .logo img{
   max-width: 150px;
 }
-
+.imagem-mobile img {
+  max-width: 100%;
+}
 /* quebra mobile */
 @media ( max-width: 992px){
+ h1, h2, p{
+  text-align: center;
+ } 
 .container{
  max-width: 100%;
  padding: 0;
@@ -341,9 +346,57 @@ html, body{
 .form-home .btn-bt{
  padding: 1em 3em !important;
 }
+#colapse {
+ background: #1079f6;
+ color: #fff;
+ padding: 0px 3em;
 }
-
-
+#colapse h2, #colapse p, #colapse a{
+ color: #fff;
+}
+#colapse h4  {
+color: #fbfcfd;
+}
+#colapse .fa{
+ color: #fff; 
+}
+#colapse .panel-group a:focus .fa{
+ background: #fff; 
+ color: #1079f6;
+}
+.panel-default>.panel-heading+.panel-collapse>.panel-body {
+  border-top-color: #ddd;
+  color: #585757;
+}
+#footer ul {
+  width: 100%;
+  display: table;
+  position: relative;
+  margin: 0 auto;
+  text-align: center !important;
+  padding: 0;
+}
+#footer ul li{
+  display: inline-block;
+}
+#footer p{
+  text-align: center !important;
+}
+#footer a img {
+  float: none !important;
+}
+.services-carousel{
+  display: table;
+  margin: 0 auto;
+  position: relative;
+}
+.services-carousel .col-sm-6, .services-carousel .col-xs-6{
+  max-width: 50%;
+  text-align: center;
+}
+#Cmobile {
+    height: 340px;
+}
 
 
 @media ( max-width: 640px){

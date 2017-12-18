@@ -1,7 +1,7 @@
   <div  class="row padding-three relative center-block container margin-top-four">
-    <div class="col-md-2 black-80">
+    <div class="col-md-2 black-80 hidden-xs hidden-xs">
       <ul>  
-        <span class="bold black-80">Menu</span>
+        <span class="bold black-80 ">Menu</span>
         <li><a href="" class="black-50">Habilitação</a></li>
         <li><a href="" class="black-50">Veículos</a></li>
         <li><a href="" class="black-50">Infrações</a></li>
@@ -10,7 +10,7 @@
         <li><a href="" class="black-50">Dúvidas Frequentes</a></li>
       </ul>
     </div>
-    <div class="col-md-2 black-80">
+    <div class="col-md-2 black-80 hidden-xs hidden-xs">
       <ul>  
         <span class="bold black-80">O Detran</span>
         <li><a href="" class="black-50">Parceiros</a></li>
@@ -20,7 +20,7 @@
         <li><a href="" class="black-50">Legislação</a></li>
       </ul>
     </div>
-    <div class="col-md-2 black-80">
+    <div class="col-md-2 black-80 hidden-xs hidden-xs">
       <ul>  
         <span class="bold black-80">Comunicação</span>
         <li><a href="" class="black-50">Sala de Imprensa</a></li>
@@ -29,7 +29,7 @@
         <li><a href="" class="black-50">Cetran</a></li>
       </ul>
     </div>
-    <div class="col-md-1 black-80">
+    <div class="col-md-1 black-80 hidden-xs hidden-xs">
       <ul>  
         <span class="bold black-80">Onde Encontrar</span>
         <li><a href="" class="black-50">Endereços</a></li>
@@ -39,7 +39,7 @@
     </div>
     <div class="col-md-2 black-80">
       <ul class="text-left">  
-        <span class="bold black-80 text-left margin-bottom-one">Compartilhe</span>
+        <span class="bold black-80 text-left margin-bottom-one hidden-xs hidden-xs">Compartilhe</span>
         <li><a href="" class="black-50 pull-left padding-halve" data-toggle="tooltip" data-placement="top" title="Compartilhe no twitter"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
         <li><a href="" class="black-50 pull-left padding-halve" data-toggle="tooltip" data-placement="top" title="Compartilhe no facebook"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
         <li><a href="" class="black-50 pull-left padding-halve" data-toggle="tooltip" data-placement="top" title="Compartilhe no YouTube"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a></li>
