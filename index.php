@@ -2,14 +2,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Texte NetLex</title>
+    <title>Teste NetLex FrontEnd</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <meta charset="utf-8">
-    <!-- Bootstrap -->
-    <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- Bootstrap -->    <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
         <!-- Icons -->
     <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
         <!-- Estilo -->
@@ -139,7 +138,7 @@
           <h2 class="black-80">Newsletter</h2>
           <span class="black-80">Desafio aqui é customizar o css do bootstrap</span>
         </div>
-        <div class="col-md-2 form-group border-right-gray ">
+        <div class="col-md-2 col-sm-2 form-group border-right-gray ">
             <span class="text-fit margin-bottom-one black-100">Primeiro Campo</span><br>
               <select class="form-control form-group text-size-120 blue" id="sel1">
                 <i class="fa fa-plus" aria-hidden="true"></i> 
@@ -147,18 +146,18 @@
                 <option class="text-size-120">2</option>
               </select>   
         </div>
-        <div class="col-md-2 form-group border-right-gray ">
+        <div class="col-md-2 col-sm-2 form-group border-right-gray ">
             <span class="text-fit margin-bottom-one black-100">Segundo Campo ativo</span><br>
               <select class="option form-control form-group text-size-120 blue" id="sel2">
                 <option class="text-size-120 ">Selecione</option>
                 <option class="text-size-120">2</option>
               </select>       
         </div>
-        <div class="col-md-2 form-group border-right-gray">
+        <div class="col-md-2 col-sm-2 form-group border-right-gray">
           <span for="txt black-100">Label input texto</span><br>
           <input type="text" class="form-control" id="txt">
         </div>
-        <div class="col-md-2 form-group border-right-gray">
+        <div class="col-md-2 col-sm-2 form-group border-right-gray">
           <span for="num black-100">Label input numero</span><br>
           <input type="text" id="UserMobile" maxlength="14" data-fv-numeric="true" data-fv-numeric-message="Por favor entre com um telefone válido" data-fv-phone-country11="IN" required="required" data-fv-notempty-message="Este campo não pode ser em branco." placeholder="Numero. " class="form-control" name="data[User][mobile]" data-fv-field="data[User][mobile]">
         </div>

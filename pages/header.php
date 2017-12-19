@@ -1,16 +1,16 @@
 	<!-- Menu topo -->
-	 <nav class="top-menu navbar navbar-inverse hidden-sm hidden-xs border-none margin-none radius-none blue-bg">
+	 <nav class="top-menu navbar navbar-inverse hidden-xs border-none margin-none radius-none blue-bg">
         <div class="container container-fluid">
           <ul class="nav navbar-nav navbar-right text-size-150 pull left padding-none realtive">
             <li class="hover"><a href="#" class="hover"><span class="text-thin">Disque Detran</span></a></li>
             <li class="hover"><a href="#" class="hover"><span class="text-thin"> Dúvidas Frequentes</span></a></li>
             <li class="hover"><a href="#" class="hover"><span class="bold"> Cadastre-se</span></a></li>
-            <li class="hover"><button type="button" class="entrar border-all-white padding-halve hover radius transparent-bg white margin-top-half" data-toggle="modal" data-target="#login-pop">Entrar</button></li>
+            <li class="hover"><button type="button" class="entrar border-all-white padding-halve hover radius transparent-bg white margin-top-half margin-right-half" data-toggle="modal" data-target="#login-pop">Entrar</button></li>
           </ul>
         </div>
       </nav>
     <!-- Menu Desk -->
-    <nav class="desktop-menu navbar navbar-expand-sm navbar-light bg-faded navbar-inverse padding-none realtive border-none transparent-bg box-width zindex-2 absolute center-block center-block-absolute hidden-sm hidden-xs">
+    <nav class="desktop-menu navbar navbar-expand-sm navbar-light bg-faded navbar-inverse padding-none realtive border-none transparent-bg box-width zindex-2 absolute center-block center-block-absolute hidden-xs">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -88,7 +88,7 @@
        </div> 
    </nav>
    <!-- Menu mobile -->
-   <nav class="mobile-menu navbar-default hidden-md hidden-lg" role="navigation">
+   <nav class="mobile-menu navbar-default hidden-sm hidden-md hidden-lg" role="navigation">
   <div class="navbar-header blue-bg">
   	<button  type="button" class="navbar-toggle hover border-none radius-none margin-none padding-two" data-toggle="collapse" data-target=".navbar-collapse">
 		<i class="fa fa-bars white fa-2x" aria-hidden="true"></i>
