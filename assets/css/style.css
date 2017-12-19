@@ -398,7 +398,7 @@ color: #fbfcfd;
 #Cmobile {
     height: 340px;
 }
-.btn-default{
+#colapse .btn-default{
   background: #fff !important;
   color: #1079f6 !important;
 }
