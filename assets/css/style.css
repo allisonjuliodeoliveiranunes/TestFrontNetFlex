@@ -48,8 +48,8 @@ html, body{
 	max-width: 80%;
 }
 .btn-default:hover, .btn-default:visited, .btn-default:focus{	
-	background: #1079f6 !important;
-	color: #fff !important;		
+	background: #1079f6;
+	color: #fff;		
 	box-shadow: 0px 2px 2px 0px #959696;
 }
 /* Fim */
@@ -397,8 +397,11 @@ color: #fbfcfd;
 #Cmobile {
     height: 340px;
 }
-
-
+.btn-default{
+  background: #fff !important;
+  color: #1079f6 !important;
+}
+}
 @media ( max-width: 640px){
 .carousel-inner .textDT {
   max-width: 90%;
