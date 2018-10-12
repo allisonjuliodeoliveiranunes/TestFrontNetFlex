@@ -1,3 +1,3 @@
-## Site de testes para Dentran Sp
+## Site de testes para Dentran Sp criado em PHP
 
-[VEja a demostração](https://detransp.000webhostapp.com/)
+[Veja a demostração](https://detransp.000webhostapp.com/)
